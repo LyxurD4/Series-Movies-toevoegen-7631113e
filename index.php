@@ -81,6 +81,11 @@ if(isset($_GET["ratingSortering"])) {
                 <td><a href="series.php?id=<?php echo $row["id"]?>">Bekijk details</a></td>
             </tr>
         <?php } ?>
+        <tr>
+            <td><a href="nieuweSerie.php">Nieuwe serie</a></td>
+            <td></td>
+            <td></td>
+        </tr>
 </table>
 
 <h1>
@@ -101,6 +106,11 @@ if(isset($_GET["ratingSortering"])) {
             <td><a href="films.php?id=<?php echo $row["id"]?>">Bekijk details</a></td>
         </tr>
     <?php } ?>
+    <tr>
+        <td><a href="nieuweFilm.php">Nieuwe film</a></td>
+        <td></td>
+        <td></td>
+    </tr>
 </table>
 <form action="index.php" method="POST">
     <input type="submit" value="Unset sorteringen" name="unset">
