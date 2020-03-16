@@ -28,7 +28,6 @@ if (isset($_POST["nieuweSerie"])) {
     $query = "INSERT INTO series (title, rating, description, has_won_awards, seasons, country, language)
     VALUES ('$titleVar', $ratingVar, '$descriptionVar', $awardVar, $seasonVar, '$countryVar', '$languageVar')";
     $conn->query($query);
-    // exit($query);
     header("Refresh: 0; url=index.php");
 }
 ?>
